@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <div>
+    <div class="container">
+        <form action="index.html" method="POST">
+            <div>
                 <p>Film címe</p>
                 <input type="text" name="nev" id="filmNev">
-        </div>
-        <div>
+            </div>
+            <div>
                 <p>Rendező neve</p> 
                 <input type="text" name="redezo" id="filmRendezo">
-        </div>
-        <div>
+            </div>
+            <div>
                 <p>Kiadási év</p>
                 <input type="number" name="ev" id="filmEv">
+            </div>
+        </form>
+        <div>
+            <button onclick="hozzaad()">Hozzáad</button>
         </div>
         <div>
-            <input type="submit" value="Hozzáad" onclick="hozzaad()">
+            <button onclick="listaz()">Listáz</button>
         </div>
-        <div>
-            <input type="submit" value="Listáz" onclick="listaz()">
+        <div id="tabla">
         </div>
     </div>
 </body>
