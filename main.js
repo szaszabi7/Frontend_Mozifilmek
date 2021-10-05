@@ -41,8 +41,6 @@ function hozzaad() {
     var tablazat = document.getElementById('tabla');
     var tableBody = document.getElementById('tablaAdatok');
 
-    tablazat.style.display = "table";
-
     tableBody.innerHTML = "";
 
     for (let i = 0; i < adatok.length; i++) {
