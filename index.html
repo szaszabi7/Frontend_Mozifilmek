@@ -7,31 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <form action="index.html" method="POST">
-            <div>
-                <p>Film címe</p>
-                <input type="text" name="nev" id="filmNev">
+        <h1>Mozifilmek</h1>
+        <div class="contaner">
+            <div class="row">
+                <div class="col-lg-2" id="asd">
+                    <form action="index.html" method="POST">
+                        <div>
+                            <label class="text-white">Film címe</label><br>
+                            <input type="text" name="nev" id="filmNev">
+                        </div>
+                        <div>
+                            <label class="text-white">Rendező neve</label><br>
+                            <input type="text" name="redezo" id="filmRendezo">
+                        </div>
+                        <div>
+                            <label class="text-white">Kiadási év</label><br>
+                            <input type="number" name="ev" id="filmEv">
+                        </div>
+                    </form>
+                    <button onclick="hozzaad()" class="btn btn-success">Hozzáad</button>
+                </div>
+                <div class="col-lg-10">
+                    <table id="tabla" class="table table-dark table-striped">
+                        <thead>
+                            <th>Film Címe</th>
+                            <th>Rendező neve</th>
+                            <th>Film kiadási éve</th>
+                        </thead>
+                        <tbody id="tablaAdatok">
+                                    
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div>
-                <p>Rendező neve</p> 
-                <input type="text" name="redezo" id="filmRendezo">
-            </div>
-            <div>
-                <p>Kiadási év</p>
-                <input type="number" name="ev" id="filmEv">
-            </div>
-        </form>
-        <div>
-            <button onclick="hozzaad()">Hozzáad</button>
-        </div>
-        <div>
-            <button onclick="listaz()">Listáz</button>
-        </div>
-        <div id="tabla">
         </div>
     </div>
 </body>

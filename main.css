@@ -1,0 +1,24 @@
+button {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 0.5em;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+#asd {
+    text-align: center;
+}
